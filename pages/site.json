@@ -94,6 +94,20 @@
                 "schemaApi": "get:/pages/crud-edit.json"
               }
             ]
+          },
+          {
+            "label": "断网",
+            "url": "/failover",
+            "rewrite": "/failover/list",
+            "icon": "fa fa-cube",
+            "children": [
+              {
+                "label": "列表",
+                "url": "/failover/list",
+                "icon": "fa fa-list",
+                "schemaApi": "get:/pages/failover.json"
+              }
+            ]
           }
         ]
       },
