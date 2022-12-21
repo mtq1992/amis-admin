@@ -1,0 +1,46 @@
+{
+  "type": "page",
+  "title": "新增",
+  "remark": null,
+  "toolbar": [
+    {
+      "type": "button",
+      "actionType": "link",
+      "link": "/failover/list",
+      "label": "返回列表"
+    }
+  ],
+  "body": [
+    {
+      "title": "",
+      "type": "form",
+      "redirect": "/failover/list",
+      "name": "sample-edit-form",
+      "api": "post:http://localhost:7001/webapi/underlay_net_failover/project/",
+      "controls": [
+        {
+          "type": "text",
+          "name": "name",
+          "label": "计划名"        
+        },
+        {
+          "type": "text",
+          "name": "operators",
+          "label": "操作人列表"
+        },
+        {
+          "type": "input-datetime",
+          "name": "operate_start_time",
+          "label": "计划开始执行时间",
+          "format": "YYYY-MM-DD HH:mm:ss"
+        },
+        {
+          "type": "input-datetime",
+          "name": "operate_end_time",
+          "label": "计划完成执行时间",
+          "format": "YYYY-MM-DD HH:mm:ss"
+        }
+      ]
+    }
+  ]
+}

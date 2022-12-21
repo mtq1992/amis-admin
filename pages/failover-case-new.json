@@ -1,0 +1,44 @@
+{
+  "type": "page",
+  "title": "新增",
+  "remark": null,
+  "toolbar": [
+    {
+      "type": "button",
+      "actionType": "link",
+      "link": "/failover/list",
+      "label": "返回列表"
+    }
+  ],
+  "body": [
+    {
+      "title": "",
+      "type": "form",
+      "redirect": "/failover/list",
+      "name": "sample-edit-form",
+      "api": "post:http://localhost:7001/webapi/underlay_net_failover/case/",
+      "controls": [
+        {
+          "type": "text",
+          "name": "name",
+          "label": "场景名"        
+        },
+        {
+          "type": "text",
+          "name": "case_id",
+          "label": "NDR场景id"
+        },
+        {
+          "type": "text",
+          "name": "type",
+          "label": "场景类型"
+        },
+        {
+          "type": "text",
+          "name": "site",
+          "label": "云上机房名称"
+        }
+      ]
+    }
+  ]
+}

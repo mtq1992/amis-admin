@@ -106,6 +106,40 @@
                 "url": "/failover/list",
                 "icon": "fa fa-list",
                 "schemaApi": "get:/pages/failover.json"
+              },
+              {
+                "label": "新增",
+                "url": "/failover/new",
+                "schemaApi": "get:/pages/failover-new.json"
+              },
+              {
+                "label": "查看",
+                "url": "/failover/:id",
+                "schemaApi": "get:/pages/failover-view.json"
+              }
+            ]
+          },
+          {
+            "label": "断网场景",
+            "url": "/failover-case",
+            "rewrite": "/failoverc-case/list",
+            "icon": "fa fa-cube",
+            "children": [
+              {
+                "label": "列表",
+                "url": "/failover-case/list",
+                "icon": "fa fa-list",
+                "schemaApi": "get:/pages/failover-case.json"
+              },
+              {
+                "label": "新增",
+                "url": "/failover-case/new",
+                "schemaApi": "get:/pages/failover-case-new.json"
+              },
+              {
+                "label": "查看",
+                "url": "/failover-case/:id",
+                "schemaApi": "get:/pages/failover-case-view.json"
               }
             ]
           }
